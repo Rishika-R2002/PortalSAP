@@ -1,0 +1,52 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" opened="true">
+        <app-sidenav></app-sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-header></app-header>
+       <!-- mattoolbar -->
+        <mat-toolbar color = "primary">
+            <h1 style="text-align: center;">Customer Information</h1>
+            <div class="bg"></div>
+          </mat-toolbar>
+        <div class="form-container mat-elevation-z5">
+            <table align="center" >
+                <tr>
+                    <td><strong>Customer ID :</strong></td>
+                    <td>{{Customer}}</td>
+                </tr>
+                <br>
+                <tr>
+                    <td><strong>Customer Name :</strong></td>
+                    <td>{{Name}}</td>
+                </tr>
+                <br>
+                <tr>
+                    <td><strong>Country Key :</strong></td>
+                    <td>{{Country}}</td>
+                </tr>
+                <br>
+                <tr>
+                    <td><strong>Postal Code :</strong></td>
+                    <td>{{Pc}}</td>
+                </tr>
+                <br>
+                <tr>
+                    <td><strong>Telephone number :</strong></td>
+                    <td>{{Phone}}</td>
+                </tr>
+                <br>
+                <tr>
+                    <td><strong>Address :</strong></td>
+                    <td>{{Address}}</td>
+                </tr>
+                <br>
+                <tr>
+                    <td><strong>District :</strong></td>
+                    <td>{{District}}</td>
+                </tr>
+            </table>
+    </div>
+        
+ </mat-drawer-content>
+</mat-drawer-container>

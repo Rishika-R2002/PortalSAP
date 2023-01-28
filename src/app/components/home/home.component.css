@@ -1,0 +1,22 @@
+mat-toolbar{
+    justify-content: space-between;
+}
+
+.content{
+    padding: 32px;
+}
+
+:host{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+mat-drawer{
+    width: 260px;
+    background: #050505;
+}
+
+mat-drawer-container{
+    height: 100%;
+}

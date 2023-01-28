@@ -1,0 +1,11 @@
+.sign-up-link{
+  font-size: 1rem;
+  margin-left: 8px;
+}
+mat-toolbar{
+  justify-content: space-between;
+}
+
+.content{
+  padding: 32px;
+}

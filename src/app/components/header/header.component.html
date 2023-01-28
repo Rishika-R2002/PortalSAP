@@ -1,0 +1,29 @@
+<mat-toolbar>
+        <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; font-weight:bolder ;font-size: xx-large; ">One stop for Customer</h1>
+        <!-- <button mat-icon-button ><mat-icon>menu</mat-icon></button> -->
+        <!-- <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()"> -->
+            
+        <div class="bg"></div>
+        <div class="row mr-2 ml-auto">
+            <ul>
+                <div class="icon">
+                <li>
+                    <!-- (click)="drawer.toggle()" -->
+                    <!-- <button mat-raised-button ><mat-icon>menu</mat-icon></button> -->
+                    <button mat-mini-fab mat-button [matMenuTriggerFor] = "menu" class="user mt-2 d-flex align-items-center" >
+                    <mat-icon>perm_identity</mat-icon>
+
+                    <!-- <mat-icon class="user-image-icon ml-1">keyboard_arrow_down</mat-icon> -->
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                        <mat-icon>exit_to_app</mat-icon>
+                        Logout
+                    </button>
+                </mat-menu>
+            </li>
+        </div>
+            </ul>
+        </div>
+   
+</mat-toolbar>
