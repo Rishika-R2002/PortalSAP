@@ -13,7 +13,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     right: 0;
     position: absolute;
     /* background: transparent; */
-    background: #bdbdc0d0;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 0%, transparent 80%),radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);;
     color: rgb(4, 4, 5);
     opacity: 90%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
@@ -52,7 +52,7 @@ html{
 }
 
 .mat-toolbar.mat-primary {
-    background: #3d248ec1;
+    background: #080809c1;
     color: #fff;
   }
 

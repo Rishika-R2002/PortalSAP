@@ -1,6 +1,6 @@
 .mat-divider{
     border-top-width: 2px;
-    border-color: aliceblue;
+    border-color: #26394E;
 }
 
 .mat-icon{
@@ -25,11 +25,12 @@
 }
 
 .mat-item-list-content:hover{
-    background: #2c3344;
+    background: #97a2be;
 }
 
 .list-item-active{
-    color: #f2f5f7;
+    color: #f3f2f7;
+    background: #2c3344;
 }
 
 .list-item-active:hover{

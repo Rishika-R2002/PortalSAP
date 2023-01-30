@@ -15,7 +15,11 @@ mat-toolbar{
 
 mat-drawer{
     width: 260px;
-    background:#9a91c6 ;
+    background: linear-gradient(to right, #ffb311, #FED057);
+    opacity: 90%;
+    /* background:#FED057 ; */
+    /* border-radius: 10px; */
+    
 }
 
 mat-drawer-container{
