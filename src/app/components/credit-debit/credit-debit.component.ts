@@ -5,14 +5,14 @@ import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 import { FormBuilder } from '@angular/forms';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-credit-debit',
+  templateUrl: './credit-debit.component.html',
+  styleUrls: ['./credit-debit.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class CreditDebitComponent implements OnInit {
 
   constructor(private router: Router, private http: HttpClient, private sd: FormBuilder) { } 
-    inUrl: string = 'http://localhost:3000/inquiry';
+    inUrl: string = 'http://localhost:3000/credit';
     data: any;
 
     ngOnInit(): any {
@@ -25,7 +25,5 @@ export class DashboardComponent implements OnInit {
           console.log(this.data)
       });
     }
+
 }
-
-
-

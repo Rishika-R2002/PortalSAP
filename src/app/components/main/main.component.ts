@@ -33,6 +33,7 @@ export class MainComponent implements OnInit {
     return this.http.post(this.inUrl,{
       
       USERID : a
+      
       }).subscribe(response =>{
         
       this.data=JSON.parse(JSON.stringify(response));
@@ -46,10 +47,13 @@ export class MainComponent implements OnInit {
        
        console.log(this.Address)
 // console.log(this.Name);
+      
 
    var result=this.data;
   //  console.log(result["NAME"]); 
   });
+  
 }
+
 
 }

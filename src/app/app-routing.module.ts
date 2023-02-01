@@ -6,6 +6,11 @@ import { HomeComponent } from './components/home/home.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { MainComponent } from './components/main/main.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { SalesOrderComponent } from './components/sales-order/sales-order.component';
+import { DeliveryListComponent } from './components/delivery-list/delivery-list.component';
+import { PaymentsAgingComponent } from './components/payments-aging/payments-aging.component';
+import { CreditDebitComponent } from './components/credit-debit/credit-debit.component';
+import { CreditMemoComponent } from './components/credit-memo/credit-memo.component';
 
 const routes: Routes = [
   {
@@ -28,6 +33,26 @@ const routes: Routes = [
   {
     path:'dashboard',
     component: DashboardComponent
+  },
+  {
+    path:'sales-order',
+    component: SalesOrderComponent
+  },
+  {
+    path:'delivery-order',
+    component: DeliveryListComponent
+  },
+  {
+    path:'payments-aging',
+    component: PaymentsAgingComponent
+  },
+  {
+    path:'credit',
+    component: CreditDebitComponent
+  },
+  {
+    path:'debit',
+    component: CreditMemoComponent
   }
 ]
 

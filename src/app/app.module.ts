@@ -24,6 +24,11 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { HttpClientModule } from '@angular/common/http';
+import { SalesOrderComponent } from './components/sales-order/sales-order.component';
+import { DeliveryListComponent } from './components/delivery-list/delivery-list.component';
+import { PaymentsAgingComponent } from './components/payments-aging/payments-aging.component';
+import { CreditDebitComponent } from './components/credit-debit/credit-debit.component';
+import { CreditMemoComponent } from './components/credit-memo/credit-memo.component';
 
 
 @NgModule({
@@ -36,6 +41,11 @@ import { HttpClientModule } from '@angular/common/http';
     SidenavComponent,
     DashboardComponent,
     MainComponent,
+    SalesOrderComponent,
+    DeliveryListComponent,
+    PaymentsAgingComponent,
+    CreditDebitComponent,
+    CreditMemoComponent,
   ],
   imports: [
     BrowserModule,

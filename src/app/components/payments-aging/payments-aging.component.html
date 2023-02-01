@@ -5,7 +5,7 @@
     <mat-drawer-content>
         <app-header></app-header>
         <mat-toolbar color = "primary">
-          <p style="text-align: center;">Inquiry Data</p>
+          <p style="text-align: center;">Payments And Aging</p>
             <div class="bg"></div>
           </mat-toolbar>
           <br>
@@ -17,31 +17,30 @@
           <p class="smallText">Sales Order Available: 4</p>
           <p class="smallText" style="float: right;">Search:</p> -->
             
-          <br>
-
+        <br>
   <!-- <h2>Inquiry Data Table</h2> -->
   <table class="container">
     <thead>
       <tr>
-        <th><h1>Sales Document</h1></th>
-        <th><h1>Created Date</h1></th>
-        <th><h1>Created By</h1></th>
+        <th><h1>Customer</h1></th>
+        <th><h1>Fiscal Year</h1></th>
+        <th><h1>Posting Date</h1></th>
         <th><h1>Document Date</h1></th>
-        <th><h1>Inquiry Valid From</h1></th>
-        <th><h1>Inquiry Valid To</h1></th>
-        <th><h1>Requested Delivery Date</h1></th>
+        <th><h1>Currency</h1></th>
+        <th><h1>Reference Document No.</h1></th>
+        <th><h1>Amount in local Currency</h1></th>
 
       </tr>
     </thead>
     <tbody>
       <tr *ngFor = "let obj of data">
-        <td>{{obj.VBELN}}</td>
-        <td>{{obj.ERDAT}}</td>
-        <td>{{obj.ERNAM}}</td>
-        <td>{{obj.AUDAT}}</td>
-        <td>{{obj.ANGDT}}</td>
-        <td>{{obj.BNDDT}}</td>
-        <td>{{obj.VDATU}}</td>
+        <td>{{obj.CUSTOMER}}</td>
+        <td>{{obj.FISC_YEAR}}</td>
+        <td>{{obj.PSTNG_DATE}}</td>
+        <td>{{obj.DOC_DATE}}</td>
+        <td>{{obj.CURRENCY}}</td>
+        <td>{{obj.REF_DOC_NO}}</td>
+        <td>{{obj.LC_AMOUNT}}</td>
       </tr>
       
     </tbody>

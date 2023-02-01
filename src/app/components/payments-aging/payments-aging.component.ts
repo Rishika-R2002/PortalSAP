@@ -4,15 +4,16 @@ import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 import { FormBuilder } from '@angular/forms';
 
+
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-payments-aging',
+  templateUrl: './payments-aging.component.html',
+  styleUrls: ['./payments-aging.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class PaymentsAgingComponent implements OnInit {
 
   constructor(private router: Router, private http: HttpClient, private sd: FormBuilder) { } 
-    inUrl: string = 'http://localhost:3000/inquiry';
+    inUrl: string = 'http://localhost:3000/payments-aging';
     data: any;
 
     ngOnInit(): any {
@@ -25,7 +26,5 @@ export class DashboardComponent implements OnInit {
           console.log(this.data)
       });
     }
+
 }
-
-
-
