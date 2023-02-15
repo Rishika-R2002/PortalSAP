@@ -31,8 +31,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 html{
-    background-image: url("ss.png"); 
-    background-size:cover;
+    /* background-image: url("ss.png");  */
+    background-image: linear-gradient(to right, #434343 0%, black 100%); ;
+    background-size:auto;
     background-repeat:no-repeat;
     background-position:center center; }
 

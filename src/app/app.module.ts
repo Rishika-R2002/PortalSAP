@@ -29,6 +29,17 @@ import { DeliveryListComponent } from './components/delivery-list/delivery-list.
 import { PaymentsAgingComponent } from './components/payments-aging/payments-aging.component';
 import { CreditDebitComponent } from './components/credit-debit/credit-debit.component';
 import { CreditMemoComponent } from './components/credit-memo/credit-memo.component';
+import { CommonPageComponent } from './components/common-page/common-page.component';
+import { VendorLoginComponent } from './components/vendor-login/vendor-login.component';
+import { VendorProfileComponent } from './components/vendor-profile/vendor-profile.component';
+import { VendorRfqComponent } from './components/vendor-rfq/vendor-rfq.component';
+import { VendorPoComponent } from './components/vendor-po/vendor-po.component';
+import { VendorInvoiceComponent } from './components/vendor-invoice/vendor-invoice.component';
+import { VendorPayageComponent } from './components/vendor-payage/vendor-payage.component';
+import { VendorGrComponent } from './components/vendor-gr/vendor-gr.component';
+import { VendorCreditComponent } from './components/vendor-credit/vendor-credit.component';
+import { VendorDebitComponent } from './components/vendor-debit/vendor-debit.component';
+import { VendorDashboardComponent } from './components/vendor-dashboard/vendor-dashboard.component';
 
 
 @NgModule({
@@ -46,6 +57,17 @@ import { CreditMemoComponent } from './components/credit-memo/credit-memo.compon
     PaymentsAgingComponent,
     CreditDebitComponent,
     CreditMemoComponent,
+    CommonPageComponent,
+    VendorLoginComponent,
+    VendorProfileComponent,
+    VendorRfqComponent,
+    VendorPoComponent,
+    VendorInvoiceComponent,
+    VendorPayageComponent,
+    VendorGrComponent,
+    VendorCreditComponent,
+    VendorDebitComponent,
+    VendorDashboardComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,162 @@
+
+<!-- <mat-toolbar color = "primary">
+    <p style="text-align: center;">INV</p>
+      <div class="bg"></div>
+    </mat-toolbar>
+    <br> -->
+    <!-- <div class="search" style="float: right;">
+      <div>
+        <input type="text" placeholder="Search by Sales Document" required>
+      </div>
+    </div>
+    <p class="smallText">Sales Order Available: 4</p>
+    <p class="smallText" style="float: right;">Search:</p> -->
+      
+    <!DOCTYPE html>
+    <!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="UTF-8">
+        <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+        <!-- Boxicons CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       </head>
+    <body>
+      <div class="sidebar">
+        <div class="logo-details">
+          <i class='bx bxl-c-plus-plus'></i>
+          <span class="logo_name">Vendor Portal</span>
+        </div>
+          <ul class="nav-links">
+            <li>
+              <a routerLink="/vendor-profile" >
+                <i class='bx bx-grid-alt' ></i>
+                <span class="links_name">Profile</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/vendor-rfq" >
+                <i class='bx bx-box' ></i>
+                <span class="links_name">Req. For Quotation</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/vendor-po" >
+                <i class='bx bx-list-ul' ></i>
+                <span class="links_name">Purchase Order</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/vendor-gr" >
+                <i class='bx bx-pie-chart-alt-2' ></i>
+                <span class="links_name">Goods Receipt</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/vendor-inv" >
+                <i class='bx bx-coin-stack' ></i>
+                <span class="links_name">Invoice</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/vendor-payage" routerLinkActive="list-item-active" class="active">
+                <i class='bx bx-book-alt' ></i>
+                <span class="links_name">Payage</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/vendor-credit">
+                <i class='bx bx-user' ></i>
+                <span class="links_name">Credit</span>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/vendor-debit">
+                <i class='bx bx-message' ></i>
+                <span class="links_name">Debit</span>
+              </a>
+            </li>
+            <!-- <li>
+              <a href="#">
+                <i class='bx bx-heart' ></i>
+                <span class="links_name">Favrorites</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class='bx bx-cog' ></i>
+                <span class="links_name">Setting</span>
+              </a>
+            </li> -->
+            <li class="log_out">
+              <a href="#">
+                <i class='bx bx-log-out'></i>
+                <span class="links_name">Log out</span>
+              </a>
+            </li>
+          </ul>
+      </div>
+      <section class="home-section">
+        <nav>
+          <div class="sidebar-button">
+            <i class='bx bx-menu sidebarBtn'></i>
+            <span class="dashboard">Payage Details</span>
+          </div>
+          <div class="profile-details">
+            <!--<img src="images/profile.jpg" alt="">-->
+            <span class="admin_name">User</span>
+            <i class='bx bx-chevron-down' ></i>
+          </div>
+        </nav>
+    
+        <div class="home-content" >
+          <table class="container">
+            <thead>
+            <tr>
+              <th><h1>Accounting Document No.</h1></th>
+              <th><h1>Fiscal Year</h1></th>
+              <th><h1>No. of line item within Accounting Document</h1></th>
+              <th><h1>Identification of the line item</h1></th>
+              <th><h1>Account type</h1></th>
+              <th><h1>Amount in local currency</h1></th>
+              <th><h1>Amount for updating in General Ledger</h1></th>
+            
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor = "let obj of data">
+              <td>{{obj.BELNR}}</td>
+              <td>{{obj.GJAHR}}</td>
+              <td>{{obj.BUZEI}}</td>
+              <td>{{obj.BUZID}}</td>
+              <td>{{obj.KOART}}</td>
+              <td>{{obj.DMBTR}}</td>
+              <td>{{obj.PSWBT}}</td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+      </section>
+    
+      <script>
+       let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+    sidebarBtn.onclick = function() {
+      sidebar.classList.toggle("active");
+      if(sidebar.classList.contains("active")){
+      sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+    }else
+      sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+    }
+     </script>
+    
+    </body>
+    </html>
+<!-- <h2>Inquiry Data Table</h2> -->
+
+    
+
+
+
+

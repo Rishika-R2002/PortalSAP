@@ -11,11 +11,26 @@ import { DeliveryListComponent } from './components/delivery-list/delivery-list.
 import { PaymentsAgingComponent } from './components/payments-aging/payments-aging.component';
 import { CreditDebitComponent } from './components/credit-debit/credit-debit.component';
 import { CreditMemoComponent } from './components/credit-memo/credit-memo.component';
+import { CommonPageComponent } from './components/common-page/common-page.component';
+import { VendorLoginComponent } from './components/vendor-login/vendor-login.component';
+import { VendorProfileComponent } from './components/vendor-profile/vendor-profile.component';
+import { VendorRfqComponent } from './components/vendor-rfq/vendor-rfq.component';
+import { VendorPoComponent } from './components/vendor-po/vendor-po.component';
+import { VendorInvoiceComponent } from './components/vendor-invoice/vendor-invoice.component';
+import { VendorPayageComponent } from './components/vendor-payage/vendor-payage.component';
+import { VendorGrComponent } from './components/vendor-gr/vendor-gr.component';
+import { VendorCreditComponent } from './components/vendor-credit/vendor-credit.component';
+import { VendorDebitComponent } from './components/vendor-debit/vendor-debit.component';
+import { VendorDashboardComponent } from './components/vendor-dashboard/vendor-dashboard.component';
 
 const routes: Routes = [
   {
     path:'',
     pathMatch:'full',
+    component: CommonPageComponent
+  },
+  {
+    path:'customerportal',
     component: LoginComponent
   },
   {
@@ -53,6 +68,46 @@ const routes: Routes = [
   {
     path:'debit',
     component: CreditMemoComponent
+  },
+  {
+    path:'vendor-login',
+    component: VendorLoginComponent
+  },
+  {
+    path:'vendor-profile',
+    component: VendorProfileComponent
+  },
+  {
+    path:'vendor-rfq',
+    component: VendorRfqComponent
+  },
+  {
+    path:'vendor-po',
+    component: VendorPoComponent
+  },
+  {
+    path:'vendor-inv',
+    component: VendorInvoiceComponent
+  },
+  {
+    path:'vendor-payage',
+    component: VendorPayageComponent
+  },
+  {
+    path:'vendor-gr',
+    component: VendorGrComponent
+  },
+  {
+    path:'vendor-credit',
+    component: VendorCreditComponent
+  },
+  {
+    path:'vendor-debit',
+    component: VendorDebitComponent
+  },
+  {
+    path:'vendor-dashboard',
+    component: VendorDashboardComponent
   }
 ]
 
