@@ -40,6 +40,10 @@ import { VendorGrComponent } from './components/vendor-gr/vendor-gr.component';
 import { VendorCreditComponent } from './components/vendor-credit/vendor-credit.component';
 import { VendorDebitComponent } from './components/vendor-debit/vendor-debit.component';
 import { VendorDashboardComponent } from './components/vendor-dashboard/vendor-dashboard.component';
+import { EmployeeLoginComponent } from './components/employee-login/employee-login.component';
+import { EmployeeProfileComponent } from './components/employee-profile/employee-profile.component';
+import { EmployeePayslipComponent } from './components/employee-payslip/employee-payslip.component';
+import { EmployeeLeaveComponent } from './components/employee-leave/employee-leave.component';
 
 
 @NgModule({
@@ -68,6 +72,10 @@ import { VendorDashboardComponent } from './components/vendor-dashboard/vendor-d
     VendorCreditComponent,
     VendorDebitComponent,
     VendorDashboardComponent,
+    EmployeeLoginComponent,
+    EmployeeProfileComponent,
+    EmployeePayslipComponent,
+    EmployeeLeaveComponent,
   ],
   imports: [
     BrowserModule,

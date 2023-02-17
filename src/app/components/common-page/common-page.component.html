@@ -1,47 +1,76 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cards Hover2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+</head>
 
-<div class="wrap">
-    <div class="tile"> 
-      <img src='https://cdn1.vectorstock.com/i/1000x1000/77/50/smiling-cartoon-woman-bank-worker-and-man-customer-vector-31017750.jpg0'/>
-      <div class="text">
-        
-            <h1>Customer Portal</h1>
-
-      <h2 class="animate-text">Functionalities of Sales and Distribution 
-    (SD) and Finance (FI) module.</h2>
-      <p class="animate-text">This portal is to be designed for maintaining the data of all the 
-    customers carrying out business with the organization.
-    <a mat-list-item routerLink="/customerportal"  routerLinkActive="list-item-active">Login</a></p>
-      </div>
-     </div>
-    
-    
-    <div class="tile"> 
-      <img src='https://img.freepik.com/free-vector/warehouse-staff-wearing-uniform-loading-parcel-box-checking-product-from-warehouse-delivery-logistic-storage-truck-transportation-industry-delivery-logistic-business-delivery_1150-60909.jpg?size=626&ext=jpg&ga=GA1.2.1338979808.1665245144&semt=sph'/>
-      <div class="text">
-            <h1>Vendor Portal</h1>
-
-      <h2 class="animate-text">Functionalities of Material Management 
-    (MM) and Finance (FI) module.</h2>
-      <p class="animate-text">This portal is to be designed for maintaining the data of all the 
-    vendors carrying out business with the organization.<a mat-list-item routerLink="/vendor-login"  routerLinkActive="list-item-active">Login</a></p>
-    
-      </div>
-     </div>
-      
-      <div class="tile"> 
-      <img src='https://previews.123rf.com/images/unitonevector/unitonevector1904/unitonevector190401641/123386268-professional-business-team-flat-color-illustration-men-in-formal-clothes-holding-suitcases-cartoon-c.jpg'/>
-      <div class="text">
-      <h1>Employee Portal</h1>
-      <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-      <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
-    <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      </div>
-     </div>
+<body>
+  
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <div class="icon">
+                        <i class="fa fa-user" aria-hidden="true" align="center"><br><h1 style="font-family:Georgia, serif ">Customer Portal</h1></i>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h3>
+                      <button class="button button1"><a mat-list-item routerLink="/customerportal"  routerLinkActive="list-item-active">Login</a></button>
+                    </h3>
+                    <p>This portal is designed for maintaining the data of all the 
+                      customers carrying out business with the organization.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <div class="icon">
+                        <i class="fa fa-truck" aria-hidden="true" align="center"><br><h1 style="font-family:Georgia, serif ">Vendor Portal</h1></i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h3>
+                      <button class="button button2"><a mat-list-item routerLink="/vendor-login"  routerLinkActive="list-item-active">Login</a></button>
+                    </h3>
+                    <p>This portal is designed for maintaining the data of all the 
+                      vendors carrying out business with the organization.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <div class="icon">
+                        <i class="fa fa-users" aria-hidden="true" align="center"><br><h1 style="font-family:Georgia, serif ">Employee Portal</h1></i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h3>
+                      <button class="button button3"><a mat-list-item routerLink="/employee-login"  routerLinkActive="list-item-active">Login</a></button>
+                    </h3>
+                    <p>This portal is to be designed for providing info about the 
+                      organization and employees, getting the pay slip as printable, leave balance and to request 
+                      leave.</p>
+                </div>
+            </div>
+        </div>
     </div>
-      
-      
+</body>
+
+</html>
