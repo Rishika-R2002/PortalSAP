@@ -8,7 +8,15 @@
           <p style="text-align: center;">Credit Memo</p>
             <div class="bg"></div>
           </mat-toolbar>
+          <button class="button-87" role="button" style="float: right;"><a (click)="downloadPdf()"> click to Download</a></button>
           <br>
+          <br>
+          <div class="search" style="float: right;">
+            <div>
+              <input type="text" placeholder="Search by Sales Document" style="float: right;" [(ngModel)]="BELNR" (ngModelChange)="Search()">
+            </div>
+          </div>
+          <p class="smallText" style="float: left;">Credit Details Available:{{len}}</p>
           <!-- <div class="search" style="float: right;">
             <div>
               <input type="text" placeholder="Search by Sales Document" required>

@@ -8,19 +8,26 @@
           <p style="text-align: center;">Inquiry Data</p>
             <div class="bg"></div>
           </mat-toolbar>
+          <button class="button-87" role="button" style="float: right;"><a (click)="downloadPdf()"> click to Download</a></button>
           <br>
-          <!-- <div class="search" style="float: right;">
+          <br>
+          <div class="search" style="float: right;">
             <div>
-              <input type="text" placeholder="Search by Sales Document" required>
+              <input type="text" placeholder="Search by Sales Document" style="float: right;" [(ngModel)]="VBELN" (ngModelChange)="Search()">
             </div>
           </div>
-          <p class="smallText">Sales Order Available: 4</p>
-          <p class="smallText" style="float: right;">Search:</p> -->
+          <p class="smallText" style="float: left;">Inquiry Data Available:{{len}}</p>
+          
+          <!-- HTML !-->
+
+
+
+            
             
           <br>
 
   <!-- <h2>Inquiry Data Table</h2> -->
-  <table class="container">
+  <table class="container" id="table1">
     <thead>
       <tr>
         <th><h1>Sales Document</h1></th>
@@ -46,6 +53,6 @@
       
     </tbody>
   </table>
-          
+  <br><br>
  </mat-drawer-content>
 </mat-drawer-container>
