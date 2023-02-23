@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 import { FormBuilder } from '@angular/forms';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
 
 @Component({
   selector: 'app-vendor-rfq',
@@ -14,6 +16,8 @@ export class VendorRfqComponent implements OnInit {
   constructor(private router: Router, private http: HttpClient, private sd: FormBuilder) { } 
   inUrl: string = 'http://localhost:3000/vendor-rfq';
   data: any;
+  len:any;
+  PO_NUMBER:any;
 
   ngOnInit(): any {
     var a = localStorage.getItem("USERID")
@@ -22,8 +26,59 @@ export class VendorRfqComponent implements OnInit {
         USERID: a 
     }).subscribe(response => {
         this.data = JSON.parse(JSON.stringify(response));
+        this.len = this.data.length;
         console.log(this.data)
     });
   }
+
+  downloadPdf() {
+    const doc = new jsPDF();
+    const pdfName = 'example.pdf';
+    let content = document.getElementById('table1') as HTMLElement;
+
+    html2canvas(content).then(canvas => {
+      const imgData = canvas.toDataURL('image/png');
+      const imgWidth = 210;
+      const pageHeight = 295;
+      const imgHeight = canvas.height * imgWidth / canvas.width;
+      let heightLeft = imgHeight;
+      let position = 0;
+
+      doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+      heightLeft -= pageHeight;
+
+      while (heightLeft >= 0) {
+        position = heightLeft - imgHeight;
+        doc.addPage();
+        doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+        heightLeft -= pageHeight;
+      }
+
+      doc.save(pdfName);
+    });
+  
+}
+
+Search() {
+
+if(this.PO_NUMBER == "")
+
+{
+
+  this.ngOnInit();
+
+}
+
+else{
+
+  this.data = this.data.filter((res: { PO_NUMBER: string; }) =>{
+
+    return res.PO_NUMBER.toLocaleLowerCase().match(this.PO_NUMBER.toLocaleLowerCase());
+
+  })
+
+}
+
+}
 
 }
